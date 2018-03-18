@@ -1,0 +1,7 @@
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/bin/Debug/CodeBotUnity.dll.mdb
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/bin/Debug/CodeBotUnity.dll
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/obj/Debug/CodeBotUnity.dll
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/obj/Debug/CodeBotUnity.dll.mdb
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/bin/Debug/FSharp.Core.dll
+/Users/robertjanzwetsloot/RiderProjects/CodeBotUnity/CodeBotUnity/bin/Debug/System.ValueTuple.dll
