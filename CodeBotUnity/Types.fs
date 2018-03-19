@@ -20,6 +20,7 @@ type LanguageEnum =
 
 type Settings = {
   EscriptPath : Path;
+  CodeBotUnityRoot : Path;
 }
 
 type EditorState = {

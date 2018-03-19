@@ -18,11 +18,11 @@ module Generator =
       Arguments = args
     )
     
-  let cbotPath () =
-    Application.dataPath + "/Editor/cbot"
+  let cbotPath codeBotUnityRoot =
+    Application.dataPath + "/" + codeBotUnityRoot + "cbot"
     
-  let formatArgs file language =
-    cbotPath () + " " + file + " " + (languageToString language)
+  let formatArgs root file language =
+    cbotPath root + " " + file + " " + (languageToString language)
  
   let logOutput (prcess : Process) =
     prcess.StandardOutput.ReadToEnd() |> Debug.Log
@@ -32,9 +32,9 @@ module Generator =
       | error -> Debug.LogError error
  
   let generate {Settings = settings; EditorState = editorState} =
-    let {EscriptPath = escriptPath} = settings
+    let {EscriptPath = escriptPath; CodeBotUnityRoot = root} = settings
     let {OutputLanguage = language; TemporarySourceFile = file} = editorState
-    formatArgs file language
+    formatArgs root file language
     |> startInfo escriptPath
     |> Process.Start
     |> logOutput

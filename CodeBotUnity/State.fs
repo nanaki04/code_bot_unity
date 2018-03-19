@@ -6,11 +6,12 @@ module State =
 
   let initialSettings = {
     EscriptPath = "/usr/local/bin/escript";
+    CodeBotUnityRoot = "Plugins/CodeBotUnity/Editor/";
   }
   
   let initialEditorState = {
-    SourceFile = "Assets/Editor/test.ez";
-    ImportFile = "Assets/Editor/test.ez";
+    SourceFile = "Assets/Plugins/CodeBotUnity/Editor/test.ez";
+    ImportFile = "Assets/Plugins/CodeBotUnity/Editor/test.ez";
     TemporarySourceFile = "";
     SourceText = "";
     ScrollState = Vector2 (0.0f, 0.0f)
