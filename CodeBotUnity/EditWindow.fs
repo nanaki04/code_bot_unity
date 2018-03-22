@@ -53,7 +53,7 @@ module EditWindow =
       | true ->
         (state.EditorState.InputLanguage
         |> languageToExtension
-        |> fun ext -> Application.dataPath + "/Editor/_cbot_tmp" + ext
+        |> fun ext -> Application.dataPath + "/Plugins/CodeBotUnity/Editor/_cbot_tmp" + ext
         |> updateTemporarySourceFile <| state)
         |> fun st ->
           File.WriteAllText (st.EditorState.TemporarySourceFile, st.EditorState.SourceText)
